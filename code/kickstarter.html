@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<h1><title> Kickstarter </title>
+		<link href="css/st.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div  id= "new">
+			<h1 class="medium">KICKSTARTER</h1>
+		</div>
+		<div id="container">
+			<form name="kick" >
+			<div id="div1">
+				<label id="var1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Have an account ?? <a href="bghg.html">Sign in</a></b></label>
+			</div>
+				<p></p><br>
+				<label> Sign up</label>
+				<p></p>
+				<input class="box"type="text" placeholder="Name" name="nam">
+				<br>
+				<input class="box" type="text" placeholder="E-mail" name="email">
+				<br>
+				<input class="box" type="text" placeholder="Re-Enter Email" name="reemail">
+				<p></p>
+				<input class="box" type="password" placeholder="Password" name="pass">
+				<p></p>
+				<input class="box" type="password" placeholder="Re-Enter Password" name="pass2">
+				<p></p>
+				<input type="checkbox">
+				<label id="lab1">Recieve our weekly newsletter and other occasional updates.</label>
+				<br><br>
+				<button id="button" onclick="func()"  ><b>Create Account</button>
+	
+				<label id="medium2">By signing up, you agree to our <a href="hhh.html">terms and and conditions </a></h6>
+			</form>
+		</div>
+		<script>
+		function func(){
+		
+		var name=document.kick.nam.value;
+		var pass1=document.kick.pass.value;
+		var pass2=document.kick.pass2.value;
+		var em1=document.kick.email.value;
+		var em2=document.kick.reemail.value;
+			if(name=="")
+				alert("EMPTY!!!!");
+			else if(pass1!=pass2)
+				alert("Password match nahi kar raha hai !!!");
+			else(em1 != em2)
+				alert("email doesn't matches!");
+
+		}
+		</script>
+		</body>
+</html>
